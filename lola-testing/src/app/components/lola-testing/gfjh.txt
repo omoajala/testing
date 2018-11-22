@@ -1,0 +1,104 @@
+      var seatChar;
+    var rows = new Array();
+    var seatsInARow = new Array();
+
+      order: string = 'seat';
+  seatdata: any;
+  seatinfo: Array<string>;
+
+  da: any[];
+  ad: any[];
+  u: any;
+
+  rows = new Array();
+
+  things: any[][]
+  
+  // getSeatInfo() {
+  //   this.service.getSeatData()
+  //     .subscribe((data: any) => {
+
+  //       console.log(data)
+  //       this.seatdata = JSON.parse(JSON.stringify(data))
+
+  //       let obj: { SEATDATA: seatFormation[] } = JSON.parse(JSON.stringify(data))
+  //       console.log(obj.SEATDATA)
+        
+
+  //       this.seatdata = res.
+  //       const seat_data = JSON.stringify(seatdata)
+
+  //       JSON.parse(seat_data, (key, value) => {
+  //         console.log(value)
+  //       }
+  //     )}
+
+  //     })
+
+
+        // console.log(this.da.length)
+
+        // console.log(this.ad.length)
+
+        // // debugger
+        // if(this.seatinfo) {
+        //   for (let row = 0; row<this.ad.length; row++) {
+        //     console.log(row)
+        //     for (let seats = 0; seats<this.da.length; seats++) {
+        //       // seatChar = String.fromCharCode(65 + seats);
+        //       seatsInARow.push((row+1).toString())
+        //     }
+        //     rows.push(seatsInARow);
+        //     seatsInARow = new Array();
+        //   }
+        // }
+      
+        // this.rows = rows
+        // console.log(this.rows)
+
+        // for (this.u of this.seatdata) {
+        //   const b = this.u.map(({clas}) => clas==='First')
+        //   console.log(b)
+        // }
+
+        // var b = (this.seatdata.map(({clas}) => clas==='First')) ? this.seatdata.map(({seat}) => seat):this.seatdata.map(({row}) => row)
+
+        // console.log(b)
+
+
+        // const f = this.seatdata.map(({clas}) => clas === 'First')
+        // const s = f.subscribe(val => console.log(val))
+        // this.seatdata.map(SEATDATA => SEATDATA.clas === 'First'))
+
+        // console.log(s)
+
+        // const firstClass = this.seatdata.map(SEATDATA => SEATDATA.clas === 'First')
+        // console.log(firstClass)
+        
+        this.da = this.seatdata.map(({seat}) => seat);
+        this.ad = this.seatdata.map(({row}) => row);
+
+        for (let row =0; row<this.ad.length; row++) {
+          this.things[row]
+          for (let seat_ =0; seat_<this.da.length; seat_++) {
+            this.things[row][seat_] = new Array();
+            console.log(this.things[row][seat_])
+          }
+          
+        }
+
+
+        // this.firstClass = this.seatdata.map(SEATDATA => SEATDATA.clas).map(SEATDATA => SEATDATA.seat)
+        // console.log(this.firstClass)
+
+        // this.seatClass = this.seatdata.map(SEATDATA => SEATDATA.seat).filter(SEATDATA => SEATDATA.clas)
+        // console.log(this.seatClass)
+
+        // this.rowClass = this.seatdata.map(SEATDATA => SEATDATA.row)
+        // console.log(this.rowClass)
+
+
+        // for (let u of firstClass) {
+        //   if(u==="First")
+        //     console.log("First found")
+        // }
